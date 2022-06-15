@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="euc-kr">
+<title>아이언맨 배너</title>
+<link href='http://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
+<style>
+ a.banner{
+	 margin:0 auto;
+	 position:relative;
+	 display:block;
+	 overflow:hidden;
+	 width:600px;height:176px;
+	 border:1px solid #ddd;
+	 background:url(images/Iron-Man176.png) no-repeat 0 0,
+				url(images/Tank.gif) 180px no-repeat;
+	 font-family: 'Finger Paint', cursive;font-size:1em;
+	 text-shadow:1px 1px 1px #333333;	
+	 }
+	 
+ .logo{position:absolute;display:block;
+ 		width:366px;height:100px;
+ 		top:20px;right:20px;z-index:2;
+		background:url(images/logo.png);
+		animation:xman ease-in-out 10.7s 99;
+		-webkit-animation:xman ease-in-out 10.7s 99;
+	    }
+ strong{
+	position: absolute;
+	right: 30px;
+	bottom: 10px;font-family: 'Finger Paint', cursive;
+ 		}
+ a{		
+	text-decoration: none;
+	color: #FFF}
+ 
+@keyframes xman{
+		0%{right:-765px}
+		9%{right:25px}		
+		10%{right:20px}
+		100%{}
+	}	
+@-webkit-keyframes xman{
+		0%{right:-765px}
+		9%{right:25px}		
+		10%{right:20px }
+		100%{}
+	}		
+</style>
+</head>
+
+<body>
+<a href="http://www.imdb.com/title/tt1300854/" class="banner">
+  <div class="logo">Now on Sale!</div>
+  <strong>marvel.com/ironman3</strong>
+</a>
+
+</body>
+</html>

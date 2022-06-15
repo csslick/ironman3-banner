@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>아이언맨 배너 삽입하기</title>
+<!--구글웹폰트 링크-->
+<link href='http://fonts.googleapis.com/css?family=Finger+Paint' rel='stylesheet' type='text/css'>
+<style>
+/*아이언맨 배너 삽입부분*/
+*{
+	font-family: 'Finger Paint', cursive;
+	text-decoration:none;/*하이퍼링크밑줄제거*/
+	color:#fff;/*글자색상*/
+}
+
+a.banner{
+	margin:0 auto;/*가운데정렬*/
+	position:absolute;
+	right:0;
+	display:block;
+	
+	overflow:hidden;/*부모박스 클리핑 설정*/
+	width:600px;height:176px;/*배너크기*/
+	background:url(images/Iron-Man176.png) 
+				no-repeat,
+				url(images/Tank.gif) 180px
+				no-repeat;
+	font-size:1em;		
+	}
+
+.logo{
+	/*border:1px dashed red;테두리*/
+	position:absolute;/*위치선언*/
+	display:block;
+	width:366px;height:100px;
+	top:20px;right:20px;
+	background:url(images/logo.png);
+	/*애니메이션 키프레임 선언*/
+	/*이름,모션속도,시간S, 반복횟수*/
+	animation:xman ease-in-out 8s infinite;
+	-webkit-animation:xman ease-in-out 10s infinite;
+	}
+
+@keyframes xman{
+	0%{right:-765px}
+	9%{right:25px}
+	10%{right:20px}/*모션이 화면안으로빠르게*/
+	100%{}/*대기시간*/
+	}
+@-webkit-keyframes xman{
+	0%{right:-765px}
+	9%{right:25px}
+	10%{right:20px}	
+	100%{}
+	}
+	
+strong{/*url링크표시text*/
+	position:absolute;
+	right:30px;bottom:10px;/*위치*/
+	
+	/*border:1px dashed blue;*/
+	}
+/*아이언맨 배너 삽입부분 끝*/	
+
+/*메인 페이지 구성*/
+.wrapper{
+	position:relative;
+	margin:0 auto;
+	width:800px;
+	height:auto;
+	border:1px solid #CCC;
+	}
+.top{
+	width:800px;height:176px;
+	/*border:1px dashed #666;*/
+	clear:both;
+	}
+.top img{float:left;}	
+.aside{
+	width:200px;
+	height:400px;
+	background-color:#09F;
+	float:left;
+	text-align:center;
+	line-height:400px;
+	}	
+.main{
+	width:600px;
+	height:400px;
+	background-color:#9C9;
+	float:left;
+	text-align:center;
+	line-height:400px;
+	}	
+.footer{
+	clear:both;
+	width:800px;height:50px;
+	background:#9CC;
+	text-align:center;
+	}
+</style>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="top">
+    	<img src='images/imdb.jpg' width="200" height="176">
+        <!--배너박스를 생성-->
+        <a href="http://www.imdb.com/title/tt1300854/?ref_=nv_sr_1"
+            class="banner">
+            
+        <div class="logo">Now on Sale!</div>
+            <strong>marvel.com/ironman3</strong>
+        </a>
+    </div><!--top-->
+    
+    <div class="aside">aside</div><!--aside-->
+    <div class="main">main</div><!--main-->
+  <div class="footer">footer</div>
+</div> <!-- wrapper끝-->
+</body>
+</html>
